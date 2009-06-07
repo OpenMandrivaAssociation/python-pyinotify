@@ -3,11 +3,13 @@
 Summary:	Python module for monitoring filesystems changes
 Name:		python-%{oname}
 Version:	0.8.6
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	GPLv2+
 Group:		Development/Python
 Url:		http://pyinotify.sourceforge.net/
 Source0:	http://seb.dbzteam.org/pub/pyinotify/releases/%{oname}-%{version}.tar.gz
+# fix libc version check, picked from upstream
+Patch0:		%{name}-0.8.6-fix-libc-version-check.patch
 BuildArch:	noarch
 Provides:	%{oname} = %{version}-%{release}
 BuildRequires:	epydoc
@@ -27,6 +29,7 @@ top of them.
 
 %prep
 %setup -q -n %{oname}
+%patch0 -p1
 
 %build
 %{__python} setup.py build
