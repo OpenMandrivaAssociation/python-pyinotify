@@ -2,7 +2,7 @@
 
 Summary:	Python module for monitoring filesystems changes
 Name:		python-%{oname}
-Version:	0.8.7
+Version:	0.8.8
 Release:	%mkrel 1
 License:	GPLv2+
 Group:		Development/Python
