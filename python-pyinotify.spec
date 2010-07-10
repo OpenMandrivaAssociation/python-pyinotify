@@ -2,7 +2,7 @@
 
 Summary:	Python module for monitoring filesystems changes
 Name:		python-%{oname}
-Version:	0.8.9
+Version:	0.9.0
 Release:	%mkrel 1
 License:	GPLv2+
 Group:		Development/Python
@@ -40,5 +40,5 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
-%doc README TODO ACKS
+%doc README ACKS
 %{py_puresitedir}/*
