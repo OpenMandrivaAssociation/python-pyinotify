@@ -2,16 +2,16 @@
 
 Summary:	Python module for monitoring filesystems changes
 Name:		python-%{oname}
-Version:	0.9.0
+Version:	0.9.1
 Release:	%mkrel 1
-License:	GPLv2+
+License:	MIT
 Group:		Development/Python
-Url:		http://pyinotify.sourceforge.net/
+Url:		http://github.com/seb-m/pyinotify
 Source0:	http://seb.dbzteam.org/pub/pyinotify/releases/%{oname}-%{version}.tar.gz
 BuildArch:	noarch
 Provides:	%{oname} = %{version}-%{release}
 BuildRequires:	epydoc
-%py_requires -d
+BuildRequires:	python-devel
 # pyinotify can use psyco to speed things up, unfortunaltely,
 # psyco does not work under x86_64
 #Suggests:	python-psyco
@@ -40,5 +40,5 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
-%doc README ACKS
+%doc README* ACKS COPYING
 %{py_puresitedir}/*
