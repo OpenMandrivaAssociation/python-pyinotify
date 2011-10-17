@@ -2,7 +2,7 @@
 
 Summary:	Python module for monitoring filesystems changes
 Name:		python-%{oname}
-Version:	0.9.1
+Version:	0.9.2
 Release:	%mkrel 1
 License:	MIT
 Group:		Development/Python
