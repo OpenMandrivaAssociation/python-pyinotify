@@ -2,8 +2,8 @@
 
 Summary:	Python module for monitoring filesystems changes
 Name:		python-%{oname}
-Version:	0.9.2
-Release:	%mkrel 1
+Version:	0.9.3
+Release:	1
 License:	MIT
 Group:		Development/Python
 Url:		http://github.com/seb-m/pyinotify
@@ -15,7 +15,6 @@ BuildRequires:	python-devel
 # pyinotify can use psyco to speed things up, unfortunaltely,
 # psyco does not work under x86_64
 #Suggests:	python-psyco
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Pyinotify is a pure Python module for monitoring filesystems changes.
@@ -26,19 +25,14 @@ Pyinotify binds these system calls and provides an implementation on
 top of them.
 
 %prep
-%setup -q -n %{oname}
+%setup -q -n %{oname}-%{version}
 
 %build
 %{__python} setup.py build
 
 %install
-rm -rf %{buildroot}
 %{__python} setup.py install --root=%{buildroot}
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %doc README* ACKS COPYING
 %{py_puresitedir}/*
