@@ -7,7 +7,7 @@ Release:	1
 License:	MIT
 Group:		Development/Python
 Url:		http://github.com/seb-m/pyinotify
-Source0:	http://seb.dbzteam.org/pub/pyinotify/releases/%{oname}-%{version}.tar.gz
+Source0:	http://pypi.python.org/packages/source/p/pyinotify/%{oname}-%{version}.tar.gz
 BuildArch:	noarch
 Provides:	%{oname} = %{version}-%{release}
 BuildRequires:	epydoc
