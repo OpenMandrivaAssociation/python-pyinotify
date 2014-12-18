@@ -35,5 +35,5 @@ top of them.
 
 %files
 %doc README* ACKS COPYING
-%{py_puresitedir}/*
-
+%{py_puresitedir}/pyinotify-%{version}-*.egg-info
+%{py_puresitedir}/pyinotify.py*
