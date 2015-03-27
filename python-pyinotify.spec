@@ -2,12 +2,12 @@
 
 Summary:	Python module for monitoring filesystems changes
 Name:		python-%{oname}
-Version:	0.9.4
-Release:	10
+Version:	0.9.5
+Release:	1
 License:	MIT
 Group:		Development/Python
 Url:		http://github.com/seb-m/pyinotify
-Source0:	http://pypi.python.org/packages/source/p/pyinotify/%{oname}-%{version}.tar.gz
+Source0:	http://seb.dbzteam.org/pub/pyinotify/releases/pyinotify-%{version}.tar.gz
 BuildArch:	noarch
 Provides:	%{oname} = %{version}-%{release}
 BuildRequires:	epydoc
@@ -29,10 +29,10 @@ top of them.
 %setup -qn %{oname}-%{version}
 
 %build
-%{__python} setup.py build
+python setup.py build
 
 %install
-%{__python} setup.py install --root=%{buildroot}
+python setup.py install --root=%{buildroot}
 
 %files
 %doc README* ACKS COPYING

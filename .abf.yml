@@ -1,3 +1,4 @@
----
-sources:
+removed_sources:
   pyinotify-0.9.4.tar.gz: 9bd7fe54aecf05d85fd1b8b0c0b7293edb7777cd
+sources:
+  pyinotify-0.9.5.tar.gz: db6db227b5db371a0edd1f87f2b08696367c8a50
