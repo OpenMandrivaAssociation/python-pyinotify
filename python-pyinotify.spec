@@ -3,7 +3,7 @@
 Summary:	Python module for monitoring filesystems changes
 Name:		python-%{oname}
 Version:	0.9.4
-Release:	10
+Release:	11
 License:	MIT
 Group:		Development/Python
 Url:		http://github.com/seb-m/pyinotify
