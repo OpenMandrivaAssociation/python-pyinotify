@@ -2,15 +2,14 @@
 
 Summary:	Python module for monitoring filesystems changes
 Name:		python-%{oname}
-Version:	0.9.4
-Release:	11
+Version:	0.9.6
+Release:	1
 License:	MIT
 Group:		Development/Python
 Url:		http://github.com/seb-m/pyinotify
 Source0:	http://pypi.python.org/packages/source/p/pyinotify/%{oname}-%{version}.tar.gz
 BuildArch:	noarch
 Provides:	%{oname} = %{version}-%{release}
-BuildRequires:	epydoc
 BuildRequires:	pkgconfig(python)
 BuildRequires:	python-setuptools
 # pyinotify can use psyco to speed things up, unfortunaltely,
