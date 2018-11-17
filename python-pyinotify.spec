@@ -37,3 +37,4 @@ top of them.
 %doc README* ACKS COPYING
 %{py_puresitedir}/pyinotify-%{version}-*.egg-info
 %{py_puresitedir}/pyinotify.py*
+%{py_puresitedir}/__pycache__/*.pyc
